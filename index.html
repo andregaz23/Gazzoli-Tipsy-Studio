@@ -1,48 +1,186 @@
-<!DOCTYPE html>
-<html lang=""it">
 
-<head>
-<meta vharst="UTF-8"> 
-<meta  name="viewport" content="width=device-width, initial scale=1.0"> 
-<title> RIVOLTA</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #1c1c1c;
-        color: #ffffff;
-    }
+<!doctype html>
+<html lang="it">
 
-    header {
-        background-color: #333333;
-        padding: 20px;
-        text-align: center;
-    }
-
-nav {
-    background-color: #666666;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333333;
-    padding: 10px;
-    text-align: center;
-}
-</style>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" media="all">
+  @import url("../layouts/pure-base.css");
+  @import url("../layouts/pure-grids.css");
+  @import url("../layouts/pure-grids-responsive.css");
+  @import url("../layouts/pure-menus-responsive.css");
+  @import url("../layouts/font-awesome.css");
+  @import url("../layouts/jquery.fancybox.css");
+  @import url("../layouts/slicknav.css");
+  @import url("../layouts/perocchiovini-layout-screen.css");
+  </style>
+  <style type="text/css" media="all">
+  body {
+     background: transparent url() no-repeat;
+  }
+  </style>
+  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/background.cycle.min.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+  <script type="text/javascript" src="../js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('a.new-window-link').click(function() {
+      $(this).attr('target','_blank');
+    }); 
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="../js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.pure-menu-list').slicknav({
+    variableWidth: true,
+    label: '',
+    allowParentLinks: true
+  });
+});
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/graphics/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/graphics/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/graphics/favicons/favicon-16x16.png" />
+<link rel="manifest" href="/graphics/favicons/site.webmanifest" />
+<link rel="mask-icon" href="/graphics/favicons/safari-pinned-tab.svg" color="#952b39" />
+<link rel="shortcut icon" href="/graphics/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-config" content="/graphics/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+<title>Azienda Agricola Perocchio Vini - Barbera d'Asti, Grignolino d'Asti, Piemonte Cortese.</title>
+<meta name="description" content="Benvenuto su Perocchio Vini." />
+<script type="text/javascript">
+$(document).ready(function() {
+  /*
+  backgroundCycle
+  imageUrls: [], // an array of strings representing urls to the images to cycle through
+	duration: 5000, // the nr of miliseconds between two fades.
+	fadeSpeed: 1000, // the nr of miliseconds it takes for one image to fade out to another.
+	backgroundSize: SCALING_MODE_NONE specify a value for the css3 property 'background size' or one of the following constants; SCALING_MODE_NONE, SCALING_MODE_STRETCH, SCALING_MODE_COVER, SCALING_MODE_CONTAIN
+  */
+  $("#splash-wrapper").backgroundCycle({
+    imageUrls: [
+      '../graphics/splash-wrapper-background-1.jpg',
+      '../graphics/splash-wrapper-background-2.jpg',
+      '../graphics/splash-wrapper-background-3.jpg'
+    ],
+    fadeSpeed: 2000,
+    duration: 5000,
+    backgroundSize: SCALING_MODE_CONTAIN
+  });
+});
+</script>
 </head>
+<body>
+  <!-- start #page -->
+  <div id="page">
+    
+  <!-- inizio gesture icons -->
+  <!-- <div id="icona-gesture"><img src="../graphics/icona-gesture.svg" style="width: 50px;" alt="Scorri a sinistra e destra per muovere il menu." /></div> -->
+  <!-- fine gesture icons -->
+  <!-- start #header-wrapper -->
+  <div id="header-wrapper">
+  <!-- start #header -->
+  <div id="header">
+    <div id="langs"><a href="https://www.perocchiovini.com/it"><img src="../graphics/bandiera-italia.svg" alt="Italiano." style="height: 20px;" /></a> <span style="display: none;">-</span> <a href="https://www.perocchiovini.com/en"><img src="../graphics/bandiera-uk.svg" alt="English." style="height: 20px;" /></a> <span style="display: none;">-</span> <a href="https://www.perocchiovini.com/de"><img src="../graphics/bandiera-germania.svg" alt="Deutsch." style="height: 20px;" /></a></div>
+    <div id="logo"><a href="index.php"><img src="../graphics/logo-perocchiovini.png" alt="Perocchio Vini" style="width: auto; height: 120px;" /></a></div><nav id="primary-navigation" class="custom-menu-wrapper">
+    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a href="index.php" class="pure-menu-link">Azienda</a></li><li class="pure-menu-item"><a href="vini.php" class="pure-menu-link">Vini</a></li><li class="pure-menu-item"><a href="territorio.php" class="pure-menu-link">Territorio</a></li><li class="pure-menu-item"><a href="galleria-fotografica.php" class="pure-menu-link">Galleria fotografica</a></li><li class="pure-menu-item"><a href="contatti.php" class="pure-menu-link">Contatti</a></li>
+    </ul>
+    </div>
+    </nav></div>
+  <!-- end #header -->
+  </div>
+  <!-- end #header-wrapper -->
+    <!-- start #splash-wrapper -->
+    <div id="splash-wrapper">
+      <div class="splash-box">
+        <h1 class="splash-title"><a href="vini.php">I nostri vini</a></h1>
+      </div>
+    </div>
+    <!-- end #splash-wrapper -->
+
+    <!-- start #contents-wrapper-hp -->
+    <div id="contents-wrapper-hp">
+
+      <!-- start #contents-box-hp -->
+      <div id="contents-box-hp">
+        <div class="contents">
+          <h1>Perocchio Vini</h1>
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+              <div class="padding">
+
+                <p>L&rsquo;azienda Agricola Perocchio da tre generazioni vinifica e imbottiglia i suoi vini ottenuti dalle proprie uve utilizzando un metodo di coltivazione antico e tradizionale,  a partire dalla potatura alla vendemmia;  tutte le uve vengono raccolte manualmente, rispettando la fase di pressatura dei mosti, i tempi necessari per la fermentazione e i processi di affinamento, riuscendo ad ottenere, grazie ad un accurato lavoro, vini di grande struttura e corposità.</p>
+                <p>I terreni dell&rsquo;azienda sorgono nel cuore del <strong>Monferrato</strong>, in particolare nei Comuni di <strong>Vaglio Serra </strong>e <strong>Vinchio (AT)</strong>,  zone rinomate come tra le migliori del <strong>Piemonte</strong> per i vini <strong>D.O.C.G</strong>. e <strong>D.O.C.</strong> di produzione. </p>
+                <p>Questi territori, inoltre, dal 2014 sono stati riconosciuti ed iscritti dall&rsquo; <strong>Unesco</strong> nella lista dei luoghi <strong>Patrimonio Mondiale dell&rsquo;umanità</strong>,<strong> </strong>con la denominazione di<strong> &ldquo;Paesaggi Vitivinicoli di Langhe, Roero e Monferrato&rdquo;</strong>.</p>
+                <p>La nostra azienda a conduzione familiare, comprende circa 17 ettari di terreno vitato dal quale si ricavano vini genuini che esprimono tutte le caratteristiche e le note tipiche delle diverse annate da cui provengono le uve.</p>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+              <div class="padding">
+
+                <p>I nostri vini:</p>
+                <p>- <strong><a href="barbera-dasti-la-ca-ruej.php">Barbera d'Asti D.O.C.G. - "La Cà da Ruéj"</a></strong><br/> - <strong><a href="barbera-del-monferrato.php">Barbera del Monferrato D.O.C.</a></strong><br/> - <strong><a href="grignolino-dasti.php">Grignolino d'Asti D.O.C.</a></strong><br/> - <strong><a href="monferrato-dolcetto.php">Monferrato Dolcetto D.O.C.</a></strong><br/> - <strong><a href="piemonte-cortese.php">Piemonte Cortese D.O.C.</a></strong>
+                </p>
+                <p>Per rispondere alle esigenze di ogni cliente, l&rsquo;Azienda offre la possibilità di acquistare i propri vini imbottigliati o sfusi, disponibili in vari formati tra cui confezioni da 2, 3, 6, 15 bottiglie oppure in damigiane,  bag in box o magnum. </p>
+                <p>E&rsquo; possibile acquistare i nostri prodotti presso la nostra cantina, effettuando così anche una degustazione ed un percorso attraverso i vigneti,  oppure riceverli direttamente a domicilio su ordinazione.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pure-g">
+            <div class="pure-u-1">
+              <div class="pulsante-contatti">
+                <p style="text-align: center;"><strong><a href="mailto:info@perocchiovini.com">Contattaci per ulteriori informazioni!</a></strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+              <div class="padding">
+                <p class="center"><a href="territorio.php"><img src="../graphics/foto-territorio-1.jpg" alt="Territorio." style="width: 100%;" /></a>
+                </p>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+              <div class="padding">
+                <h2><a href="territorio.php">Territorio</a></h2>
+                <p style="padding: 1em;">La morfologia del territorio del basso Piemonte si rivela ambiente ideale per la coltivazione della vite.<br/> Su queste meravigliose colline si sviluppa una produzione di grande qualità anche grazie alla natura del terreno, al particolare microclima ed alla ottimale esposizione dei vigneti.</p>
+                <p style="padding: 1em;">Inoltre dal 2014 i paesaggi vitivinicoli di Langhe-Roero e Monferrato sono stati finalmente iscritti dall'UNESCO nella lista del Patrimonio mondiale dell'umanità.<br/> Questi paesaggi culturali vitivinicoli, sono un’ eccezionale testimonianza vivente della tradizione storica della coltivazione della vite, dei processi di vinificazione, di un contesto sociale, rurale e di un tessuto economico basati sulla cultura del vino.</p>
+                <p style="text-align: center;"> <a href="territorio.php" class="pure-button pure-button-primary">Scopri di più</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <footer id="footer-hp"><p><strong>Perocchio Franco</strong> - Via Saborello, 3 - 14049 - Vaglio Serra (AT)<br />
+  Tel.: <a href="tel:+390141732113">0141 732113</a> - Cell.: <a href="tel:+393337684742">+39 333 7684742</a> - Email: <a href="mailto:info@perocchiovini.com">info@perocchiovini.com</a> - P.IVA: 00886600055<br />Copyright &copy; 2017 - Tutti i diritti sono riservati<br />
+	Utilizziamo soltanto cookies tecnici e analitici anonimi. <a href="https://www.perocchiovini.com/it/informativa-cookies.php" class="new-window-link">Maggiori informazioni</a>.<br />
+  Credits: <a href="https://www.studiocriteria.it" class="new-window-link">criteria</a></footer>    </div>
+    <!-- end #contents-box -->
+
+  </div>
+  <!-- end #contents-wrapper -->
+
+  </div>
+  <!-- end #page -->
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5968832-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-5968832-1', { 'anonymize_ip': true });
+  </script></body>
+
 </html>
