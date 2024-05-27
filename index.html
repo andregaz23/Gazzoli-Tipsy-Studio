@@ -46,7 +46,7 @@
 <body>
 
 <header>
-  <img id="logo" src="link_al_tuo_logo.png" alt="Logo Tispy Studio">
+  <img id="logo" src="logo.png" alt="Logo Tispy Studio">
 </header>
 
 <nav>
@@ -55,10 +55,43 @@
   <a href="#contatti">CONTATTI</a>
   <a href="#chi-siamo">CHI SIAMO</a>
 </nav>
-<p>
-  Benvenuto su Tipsy Studio, dove lo stile casual si fonde armoniosamente con l'eleganza dei cocktail classici! Esplora la nostra esclusiva collezione di magliette disegnate per adattarsi perfettamente al tuo stile di vita rilassato.
-Dalle pennellate creative del nostro grafico emergono le grafiche vivaci dei cocktail più amati. Ogni maglietta è un'opera d'arte unica, creata con cura per garantire un look fresco e alla moda. La nostra gamma di colori vibranti e tessuti di alta qualità garantisce comfort e durata, rendendo le nostre magliette perfette per ogni occasione.
-Sia che tu stia cercando un tocco di originalità per il tuo guardaroba quotidiano o un regalo unico per un amante dei cocktail, troverai sicuramente il capo perfetto nel nostro assortimento. Sfoglia ora la nostra selezione e scopri come puoi aggiungere un tocco di stile casual e raffinato al tuo mondo con le nostre magliette ispirate ai cocktail!
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+      background-color: #f8f8f8;
+      padding: 50px;
+      text-align: center;
+    }
+  #logo{
+    padding: 0%;
+    max-width: 45%;
+    height: 20%;
+  }
+</style>
+<!--slider starts-->
+<div id="carousel" class="carousel carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="amici.jpeg" class="d-block w-100" alt="slider 1">
+      <div class="carousel-caption d-none d-md-block justify-content-center">
+        <div class="spacer">
+        </div>
+      </div>
+    </div>
+</div>
+<!--slider ends-->
 
 </body>
 </html>
