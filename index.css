@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +73,23 @@ body {
   .form-container button:hover {
       background-color: orange;;
   }
+  #prodotti {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .tessere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20%;
+  }
+.tessere img {
+  max-width: 200px;
+  height: auto;
+}
 
 footer{
   background color: white;

@@ -1,53 +1,93 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Tipsy Studio</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Refresh automatico della pagina ogni 5 secondi -->
+    <meta http-equiv="refresh" content="5">
+    <!-- Collegamento al foglio di stile esterno -->
+    <link rel="stylesheet" href="index.css">
+    <title>Tipsy Studio</title>
 </head>
 <body>
 
+<!-- Intestazione della pagina -->
 <header>
-  <img id="logo" src="logo.png" alt="Logo Tispy Studio">
+    
+    <!-- Menu di navigazione -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#prodotti">IL PROGETTO</a>
+        <a href="#contatti">SHOP</a>
+        <a href="#chi-siamo">CONTATTI</a>
+    </nav>
+    <!-- Logo del sito -->
+    <img id="logo" src="logo.png" alt="Logo Tipsy Studio">
 </header>
+<div id="Il Progetto">
+  <h1>Benvenuti nel nostro shop di magliette a tema cocktail!</h1>
 
-<nav>
-  <a href="#home">HOME</a>
-  <a href="#prodotti">PRODOTTI</a>
-  <a href="#contatti">CONTATTI</a>
-  <a href="#chi-siamo">CHI SIAMO</a>
-</nav>
+  <p>Esplora il nostro mondo dove lo stile incontra l'arte della mixology. Ogni maglietta è ispirata ai cocktail più iconici e amati, combinando design unici e tessuti di alta qualità. Che tu sia un bartender appassionato, un amante dei drink raffinati o semplicemente alla ricerca di un look fresco e originale, le nostre magliette sono perfette per esprimere la tua personalità con gusto.
 
-<img class="mySlides" src="amici.jpeg">
-<img class="mySlides" src="amici.jpeg">
-<img class="mySlides" src="amici.jpeg">
-<img class="mySlides" src="amici.jpeg">
-<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+Sorseggia la vita con stile e lascia che ogni maglietta racconti la tua storia, un cocktail alla volta.
 
+Cheers! 🍹👕</p>
+</div>
+
+<!-- Slideshow delle immagini 
+<div class="slideshow-container">
+
+    <img class="mySlides" src="amici.jpeg" alt="Amici 1">
+    <img class="mySlides" src="amici.jpeg" alt="Amici 2">
+    <img class="mySlides" src="amici.jpeg" alt="Amici 3">
+    <img class="mySlides" src="amici.jpeg" alt="Amici 4">
+ 
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+-->
+<div id="prodotti"> 
+    <div class="tessere">
+    <img src="/img/mockup spritz.png" alt="spritz">
+    <h1>SPRITZ TEE</h1>
+    <h3>Prezzo</h3>
+  </div>
+  <div class="tessere">
+    <img src="/img/mockup martini.png" alt="spritz">
+    <h1>SPRITZ TEE</h1>
+    <h3>Prezzo</h3>
+  </div>    <div class="tessere">
+    <img src="/img/mockup negroni.png" alt="spritz">
+    <h1>SPRITZ TEE</h1>
+    <h3>Prezzo</h3>
+  </div>
+</div>
+
+<!-- Modulo di registrazione -->
 <div class="form-container">
-  <h2>REGISTRATI!</h2>
-  <form action="submit_form.php" method="post">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-      
-      <label for="cognome">Cognome:</label>
-      <input type="text" id="cognome" name="cognome" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <button type="submit">Invia</button>
-  </form>
+    <h2>REGISTRATI!</h2>
+    <form action="submit_form.php" method="post">
+        <!-- Campo per il nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <!-- Campo per il cognome -->
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
+        
+        <!-- Campo per l'email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Pulsante di invio -->
+        <button type="submit">Invia</button>
+    </form>
 </div>
 
-</div>
-
+<!-- Piè di pagina -->
 <footer>
-  <p>  ©2024. GAZZOLI ANDREA.</p>
-
+    <p>&copy; 2024. Gazzoli Andrea.</p>
 </footer>
+
 </body>
 </html>
