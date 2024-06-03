@@ -79,29 +79,33 @@ body {
     justify-content: center;
   }
   .tessere{
-    display: flex;
+   display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 4%;
+    position: relative;
+    overflow: hidden;
   }
-.tessere img {
+#portfolioImage {
   max-width: 400px;
   height: auto;
     transition: transform 0.3s ease;
     cursor: pointer;
+    z-index: 1; /* Ensure it's on top */
 }
 
-.tessere img.enlarged {
-    transform: scale(2); /* Adjust the scale as needed */
+#portfolioImage.enlarged {
+    transform: scale(3);/* Adjust the scale as needed */
+    z-index: 1000; /* Make sure it's above other content */
 }
 
 
 footer{
-  background color: white;
+  background-color: white;
   font-family: Arial, sans-serif;
   color: black;
   text-align: center;
-  justify content: center;
+  justify-content: center;
   padding: 2%;
 }
