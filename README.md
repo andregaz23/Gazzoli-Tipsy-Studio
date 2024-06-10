@@ -6,7 +6,7 @@ Benvenuto nel mio shop di magliette a tema cocktail! In questo sito è possibile
 Questo sito riassume il progetto nato con altri due amici che ha come scopo la realizzazione di magliette con grafiche uniche, fondendo la nostra passione per i cocktail con lo streetwer.
 
 ## Accesso al Sito
-Puoi visitare il mio sito portfolio [qui](https://main--tipsystudio.netlify.app/).
+Puoi visitare il mio sito [qui](https://main--tipsystudio.netlify.app/).
 
 ## Progetti Principali
 
