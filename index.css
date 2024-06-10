@@ -83,7 +83,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
   }
+
   .tessere{
    display: flex;
     flex-direction: column;
@@ -140,6 +142,16 @@ body {
   margin-bottom: 5%;
 }
 
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+}
+
 h1 {
   margin: 0;
   text-align: center;
@@ -151,7 +163,7 @@ footer{
   color: black;
   text-align: center;
   justify-content: center;
-  padding: 2%;
+  padding: 4%;
   margin-top: 2%;
   ;
 }
@@ -183,7 +195,14 @@ footer{
   }
 
   #logo {
-    max-width: 60%;
+    width: 150px;
     height: auto;
+  }
+  nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
   }
 }
