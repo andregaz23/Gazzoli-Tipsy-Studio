@@ -173,4 +173,17 @@ footer{
     align-items: center;
     justify-content: center;
   }
+
+  nav {
+    background-color: white;
+    overflow: hidden;
+    text-align: center
+    flex-direction: row;
+    display: flex: ;;
+  }
+
+  #logo {
+    max-width: 60%;
+    height: auto;
+  }
 }
