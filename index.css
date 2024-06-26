@@ -107,18 +107,19 @@ body {
     font-size: large;
     font-weight: 300;
   }
-
-#portfolioImage {
+.portfolioImage {
   max-width: 400px;
   height: auto;
     transition: transform 0.3s ease;
     cursor: pointer;
     z-index: 1; /* Ensure it's on top */
 }
+/**/
 
-#portfolioImage.enlarged {
-    transform: scale(2.6);/* Adjust the scale as needed */
-    z-index: 1000; /* Make sure it's above other content */
+.portfolioImage:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 #contatti {
