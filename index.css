@@ -150,6 +150,8 @@ flex-direction: column;
 }
 .social-media-icons i {
   margin: 30px;
+  color: white;
+  font-size: 25px;
 }
 
 
