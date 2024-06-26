@@ -117,7 +117,7 @@ body {
 }
 
 #portfolioImage.enlarged {
-    transform: scale(3);/* Adjust the scale as needed */
+    transform: scale(2.6);/* Adjust the scale as needed */
     z-index: 1000; /* Make sure it's above other content */
 }
 
@@ -192,9 +192,9 @@ footer{
   nav {
     background-color: white;
     overflow: hidden;
-    text-align: center
+    text-align: center;
     flex-direction: row;
-    display: flex: ;;
+    display: flex;
   }
 
   #logo {
