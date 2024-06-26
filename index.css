@@ -131,27 +131,26 @@ body {
 }
 
 .orange-strip {
+  display: flex;
+flex-direction: column;
   background-color: orange;
   color: white;
-  padding: 20px;
   text-align: center;
-  margin: 0 auto;
   width: 100%;
-  height: 120px;
+  height: fit-content;
   box-sizing: border-box;
   margin-bottom: 5%;
+  padding-top:20px;
 }
 
 .social-media-icons {
-    display: flex;
-    gap: 100px;
-    align-items: center;
+    align-content: center;
     text-align: center;
-    margin-top: 20px;
     color: white;
-    flex-direction: row;
 }
-
+.social-media-icons i {
+  margin: 30px;
+}
 
 
 h1 {
