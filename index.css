@@ -262,6 +262,14 @@ footer{
     align-items: center;
     justify-content: center;
   }
+  #foto1 {
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+.tessere {
+  width: 100%;
+
 }
 
 /* Media query per telefono */
