@@ -292,4 +292,8 @@ footer{
     padding: 10px;
     text-decoration: none;
   }
+  #foto1 {
+    width: 90%;
+    justify-content: center;
+    height: auto;
 }
