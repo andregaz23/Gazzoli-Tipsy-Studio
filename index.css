@@ -266,6 +266,13 @@ footer{
 
 /* Media query per telefono */
 @media (max-width: 480px) {
+  
+  header {
+    background-color: #f8f8f8;
+    text-align: center;
+  ;
+  }
+
   #shop {
     display: flex;
     flex-direction: column;
@@ -279,10 +286,11 @@ footer{
     text-align: center;
     flex-direction: row;
     display: flex;
+    padding-left: 70px;
   }
 
   #logo {
-    width: 150px;
+    width: 100%;
     height: auto;
   }
   nav a {
@@ -293,7 +301,7 @@ footer{
     text-decoration: none;
   }
   #foto1 {
-    width: 90%;
+    width: 100%;
     justify-content: center;
     height: auto;
 }
