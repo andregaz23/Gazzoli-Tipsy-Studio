@@ -22,9 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const burgerMenu = document.querySelector('.burger-menu');
   const navLinks = document.querySelector('.nav-links');
   
-  burgerMenu.addEventListener('click', function() {
-    navLinks.classList.toggle('active');
-  });
 showSlides(slideIndex);
 });
 
@@ -52,12 +49,4 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";  
 dots[slideIndex-1].className += " active";
-}
-
-
-let slideIndex2 = 1;
-
-
-function plusSlides2(n) {
-showSlides2(slideIndex2 += n);
 }
