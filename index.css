@@ -313,8 +313,42 @@ footer{
     padding: 10px;
     text-decoration: none;
   }
+
+  .slideshow-container {
+    max-width: 450px;
+    position: center;
+  }
+
+  .sliderino {
+    .mySlides {display: flex;
+      width: 450px;
+    }
+    img {vertical-align: center;
+    }
+    
+        img {
+      vertical-align: center;
+      align-items: center;
+      max-width: 450px;
+      padding-left: 50px;
+    }
+    .next {
+      right: 500px;
+      border-radius: 3px 0 0 3px;
+      margin-top: -30px; /* Posizionamento verticale */
+      font-size: 24px;
+    }
+    .prev {
+        left: 300px;
+        margin-top: -30px; /* Posizionamento verticale */
+        font-size: 24px;
+      border-radius: 3px 0 0 3px;
+    }
+  
+
   #foto1 {
-    width: 100%;
+    width: 400px;
+    height: 100px;
     justify-content: center;
-    height: auto;
+    
 }
