@@ -53,13 +53,18 @@ img {vertical-align: middle;
 
     img {
   vertical-align: center;
-  max-width: auto;
+  max-width: 100%;
   padding: 0%;
+}
+
+#foto1 {
+  width: 1000px;
+  height: 400px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1500px;
+  width: 1000px;
   position: relative;
   margin: auto;
 }
