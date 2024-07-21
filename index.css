@@ -58,8 +58,8 @@ img {vertical-align: middle;
 }
 
 #foto1 {
-  width: 1000px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 
 /* Slideshow container */
@@ -278,8 +278,10 @@ footer{
 }
 
 .sliderino {
-  .mySlides {display: flex;
-    width: 700px;
+}
+  .mySlides { 
+  display: flex;
+    width: 400px;
   }
   img {vertical-align: center;
   }
@@ -312,7 +314,7 @@ footer{
   width: 720px;
   height: 300px;
   justify-content: center;
-  
+}
 }
 
 /* Media query per telefono */
@@ -321,7 +323,6 @@ footer{
   header {
     background-color: #f8f8f8;
     text-align: center;
-    max-width: fit-content;
   ;
   }
 
@@ -354,8 +355,10 @@ footer{
   }
 
   .sliderino 
-    .mySlides {display: flex;
-      width: 300px;
+    .mySlides {
+      display: flex;
+      width: 400px;
+      padding-right: 1%;
     }
     .img {vertical-align: center;
     }
@@ -363,9 +366,10 @@ footer{
         img {
       vertical-align: center;
       align-items: center;
-      width: 450px;
-      height: 100px;
-      padding-left: 25px;
+      width: 400px;
+      height: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     .next {
       right: 25px;
@@ -380,13 +384,13 @@ footer{
       border-radius: 3px 0 0 3px;
     }
     .slideshow-container {
-      max-width: 450px;
+      max-width: 400px;
       position: center;
     }
   
 
   #foto1 {
-    max-width: 400px;
-    height: 180px;
-    justify-content: center;
+    max-width: 100%;
+    height: auto;
     }
+  }
