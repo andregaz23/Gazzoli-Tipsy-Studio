@@ -352,23 +352,18 @@ footer{
     text-decoration: none;
   }
 
-  .slideshow-container {
-    max-width: 450px;
-    position: center;
-  }
-
-  .sliderino {
+  .sliderino 
     .mySlides {display: flex;
-      width: 450px;
+      width: 300px;
     }
-    img {vertical-align: center;
+    .img {vertical-align: center;
     }
     
         img {
       vertical-align: center;
       align-items: center;
-      width: 480px;
-      height: 150px;
+      width: 450px;
+      height: 100px;
       padding-left: 25px;
     }
     .next {
@@ -383,11 +378,14 @@ footer{
         font-size: 24px;
       border-radius: 3px 0 0 3px;
     }
+    .slideshow-container {
+      max-width: 450px;
+      position: center;
+    }
   
 
   #foto1 {
-    width: 400px;
-    height: 150px;
+    max-width: 400px;
+    height: 180px;
     justify-content: center;
-    
-}
+    }
