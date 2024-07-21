@@ -343,7 +343,7 @@ height: auto;
     text-align: center;
     flex-direction: row;
     display: flex;
-    padding-left: 40px;
+    padding-left: 45px;
   }
 
   #logo {
@@ -371,8 +371,6 @@ height: auto;
       align-items: center;
       width: 400px;
       height: 10px;
-      padding-left: 15px;
-      padding-right: 15px;
     }
     .next {
       right: 25px;
