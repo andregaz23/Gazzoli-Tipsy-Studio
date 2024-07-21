@@ -257,7 +257,6 @@ footer{
   justify-content: center;
   padding: 4%;
   margin-top: 2%;
-  ;
 }
 /* visualizzazione tablet */
 @media (max-width: 768px) {
@@ -267,6 +266,12 @@ footer{
     align-items: center;
     justify-content: center;
   }
+
+  #logo {
+    width: 768px;
+    height: 150px;
+  }
+
   #foto1 {
     width: 100%;
     justify-content: center;
@@ -274,46 +279,46 @@ footer{
 }
 .tessere {
   width: 100%;
-
 }
 
-.sliderino {
-}
-  .mySlides { 
+.sliderino 
+.mySlides {
   display: flex;
-    width: 400px;
-  }
-  img {vertical-align: center;
-  }
-  
-      img {
-    vertical-align: center;
-    align-items: center;
-    width: 700px;
-    height: 150px;
-    padding-left: 0px;
-  }
-  .next {
-    right: 5px;
-    border-radius: 3px 0 0 3px;
+  width: 700px;
+  padding-right: 1%;
+}
+.img {vertical-align: center;
+}
+
+    img {
+  vertical-align: center;
+  align-items: center;
+  width: 400px;
+  height: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.next {
+  right: 25px;
+  border-radius: 3px 0 0 3px;
+  margin-top: -30px; /* Posizionamento verticale */
+  font-size: 24px;
+}
+.prev {
+    left: 25px;
     margin-top: -30px; /* Posizionamento verticale */
     font-size: 24px;
-  }
-  .prev {
-      left: 5px;
-      margin-top: -30px; /* Posizionamento verticale */
-      font-size: 24px;
-    border-radius: 3px 0 0 3px;
-  }
-  .slideshow-container {
-    max-width: 700px;
-    position: center;
-  }
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container {
+  max-width: 700px;
+  position: center;
+}
+
 
 #foto1 {
-  width: 720px;
-  height: 300px;
-  justify-content: center;
+max-width: 100%;
+height: auto;
 }
 }
 
@@ -323,7 +328,6 @@ footer{
   header {
     background-color: #f8f8f8;
     text-align: center;
-  ;
   }
 
   #shop {
