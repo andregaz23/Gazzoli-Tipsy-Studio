@@ -362,7 +362,6 @@ height: auto;
     .mySlides {
       display: flex;
       width: 400px;
-      padding-right: 1%;
     }
     .img {vertical-align: center;
     }
